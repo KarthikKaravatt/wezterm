@@ -38,6 +38,16 @@ function M.apply_to_config(config)
         mods = 'CTRL|SHIFT',
         action = wezterm.action.SplitHorizontal{domain="CurrentPaneDomain"},
       },
+      {
+        key = 'v',
+        mods = 'CTRL|ALT',
+        action = wezterm.action.PasteFrom "Clipboard"
+      },
+      {
+        key = 'c',
+        mods = 'CTRL|ALT',
+        action = wezterm.action.CopyTo "Clipboard"
+      }
     }
 end
 
